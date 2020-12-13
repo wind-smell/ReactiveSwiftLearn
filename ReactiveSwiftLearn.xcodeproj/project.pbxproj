@@ -13,9 +13,11 @@
 		110B79FD25861DF800372DA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110B79FB25861DF800372DA2 /* Main.storyboard */; };
 		110B79FF25861DFB00372DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110B79FE25861DFB00372DA2 /* Assets.xcassets */; };
 		110B7A0225861DFC00372DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110B7A0025861DFC00372DA2 /* LaunchScreen.storyboard */; };
+		DD754B31593356284AD84F6D /* Pods_ReactiveSwiftLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FAA44AC1539DC52F2F2564 /* Pods_ReactiveSwiftLearn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02FAA44AC1539DC52F2F2564 /* Pods_ReactiveSwiftLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSwiftLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110B79F225861DF800372DA2 /* ReactiveSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		110B79F525861DF800372DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		110B79F725861DF800372DA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		110B79FE25861DFB00372DA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		110B7A0125861DFC00372DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110B7A0325861DFC00372DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1BC5AC04C040D7660F61BBC /* Pods-ReactiveSwiftLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwiftLearn.debug.xcconfig"; path = "Target Support Files/Pods-ReactiveSwiftLearn/Pods-ReactiveSwiftLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		DB8609D28011F2765407D2CB /* Pods-ReactiveSwiftLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSwiftLearn.release.xcconfig"; path = "Target Support Files/Pods-ReactiveSwiftLearn/Pods-ReactiveSwiftLearn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD754B31593356284AD84F6D /* Pods_ReactiveSwiftLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				110B79F425861DF800372DA2 /* ReactiveSwiftLearn */,
 				110B79F325861DF800372DA2 /* Products */,
+				4645F2D9F2E762D8AD4D045B /* Pods */,
+				B86118CA8136962A3656EB27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = ReactiveSwiftLearn;
 			sourceTree = "<group>";
 		};
+		4645F2D9F2E762D8AD4D045B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1BC5AC04C040D7660F61BBC /* Pods-ReactiveSwiftLearn.debug.xcconfig */,
+				DB8609D28011F2765407D2CB /* Pods-ReactiveSwiftLearn.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B86118CA8136962A3656EB27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02FAA44AC1539DC52F2F2564 /* Pods_ReactiveSwiftLearn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 110B7A0625861DFC00372DA2 /* Build configuration list for PBXNativeTarget "ReactiveSwiftLearn" */;
 			buildPhases = (
+				33E48764BD469E9CF7A97F06 /* [CP] Check Pods Manifest.lock */,
 				110B79EE25861DF800372DA2 /* Sources */,
 				110B79EF25861DF800372DA2 /* Frameworks */,
 				110B79F025861DF800372DA2 /* Resources */,
+				F3C96A1114464A397E91D525 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33E48764BD469E9CF7A97F06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveSwiftLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C96A1114464A397E91D525 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveSwiftLearn/Pods-ReactiveSwiftLearn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactiveSwiftLearn/Pods-ReactiveSwiftLearn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactiveSwiftLearn/Pods-ReactiveSwiftLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		110B79EE25861DF800372DA2 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		110B7A0725861DFC00372DA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1BC5AC04C040D7660F61BBC /* Pods-ReactiveSwiftLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		110B7A0825861DFC00372DA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB8609D28011F2765407D2CB /* Pods-ReactiveSwiftLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

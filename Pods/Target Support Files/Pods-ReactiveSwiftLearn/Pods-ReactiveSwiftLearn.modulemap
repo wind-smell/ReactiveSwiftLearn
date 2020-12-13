@@ -1,0 +1,6 @@
+framework module Pods_ReactiveSwiftLearn {
+  umbrella header "Pods-ReactiveSwiftLearn-umbrella.h"
+
+  export *
+  module * { export * }
+}
